@@ -1,0 +1,226 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background-color: #ffddc1;
+    /* Light color for header */
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+h1 a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Navigation menu styles */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #333;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Section styles */
+section {
+    margin: 40px 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+section h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+section p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+
+/* 採用情報ページ用のスタイル追加 */
+
+
+
+
+
+/* 採用ページ mainエリア */
+main {
+    margin: 40px 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+/* 見出しスタイル */
+main h2,
+main h3 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* 募集要項のテーブル */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* テーブル内セル */
+table th,
+table td {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: left;
+}
+
+/* テーブルヘッダー */
+table th {
+    background-color: #ffe5d9;
+    /* 柔らかいピンクベージュ系 */
+    width: 25%;
+    font-weight: bold;
+    color: #333;
+}
+
+/* 偶数行背景色 */
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* エントリーボタン */
+.entry-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: #ff8c66;
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.entry-button:hover {
+    background-color: #e67350;
+}
+
+/* エントリーフォーム用のスタイル追加 */
+/* フォーム全体 */
+form {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+/* フォーム内のラベル */
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* 入力欄、選択欄、テキストエリア */
+form input[type="text"],
+form input[type="email"],
+form input[type="file"],
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #fafafa;
+}
+
+/* ファイルアップロードボックス */
+form input[type="file"] {
+    padding: 8px;
+}
+
+/* テキストエリア */
+form textarea {
+    resize: vertical;
+}
+
+/* 送信ボタン */
+form button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #ff8c66;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button[type="submit"]:hover {
+    background-color: #e67350;
+}
