@@ -153,7 +153,7 @@ footer p {
     position: relative;
     width: 90%;
     max-width: 1000px;
-    height: 200px;
+    height: 405px;
     padding: 20px;
     border-radius: 15px;
     text-decoration: none;
@@ -167,13 +167,32 @@ footer p {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.voice-card h3,
+/* .voice-card h3,
 .voice-card p {
     background-color: rgba(0, 0, 0, 0.4);
     padding: 5px 10px;
     border-radius: 5px;
     margin: 5px 0;
+} */
+
+/* .voice-card h3,
+.voice-card p {
+    background-color: rgba(255, 255, 255, 0.85);
+    color: #222;
+    font-weight: bold;
+    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.5);
+} */
+
+.voice-card h3,
+.voice-card p {
+    background-color: rgba(255, 255, 255, 0.8); /* 白背景に近い */
+    color: #333; /* 濃いグレーで文字をはっきり */
+    padding: 20px 30px;
+    border-radius: 5px;
+    margin: 5px 0;
 }
+
+
 
 /* ホバー効果 */
 .voice-card:hover {
@@ -184,15 +203,15 @@ footer p {
 /* 各職種ごとの背景画像 */
 .voice-card[href$="EngineerVoice.html"] {
     /* background-image: url("Engineer.png"); */
-    background-image: url("Pic/temp.webp");
+    background-image: url("../img/Development.png");
 }
 
 .voice-card[href$="DesignerVoice.html"] {
     /* background-image: url("Desiner.png"); */
-    background-image: url("Pic/temp.webp");
+    background-image: url("../img/dezain.png");
 }
 
 .voice-card[href$="SalesVoice.html"] {
     /* background-image: url("Sales.png"); */
-    background-image: url("Pic/temp.webp");
+    background-image: url("../img/Marketing.png");
 }
