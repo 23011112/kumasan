@@ -1,0 +1,86 @@
+body {
+    background: #fff8f0 repeat;
+    font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+    color: #4b3e2a;
+  }
+  
+  form {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 25px;
+    background-color: #fffef9;
+    border-radius: 18px;
+    border: 3px dashed #ffcc99;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  
+  form::before {
+    content: "🧸";
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    font-size: 40px;
+  }
+  
+  main h2 {
+    text-align: center;
+    color: #a86b34;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  main p {
+    text-align: center;
+    color: #7b6650;
+    margin-bottom: 30px;
+    font-size: 15px;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 6px;
+    color: #5b4332;
+    font-weight: bold;
+  }
+  
+  form input[type="text"],
+  form input[type="email"],
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ffd9b3;
+    border-radius: 10px;
+    background-color: #fffaf4;
+    margin-bottom: 20px;
+    font-size: 15px;
+    transition: 0.3s;
+  }
+  
+  form input:focus,
+  form textarea:focus {
+    border-color: #ffb347;
+    background-color: #fff5e6;
+    outline: none;
+  }
+  
+  form button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #ffb347;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 3px 0 #d98c2e;
+    transition: 0.3s;
+  }
+  
+  form button:hover {
+    background-color: #ffa133;
+    box-shadow: 0 2px 0 #c97e28;
+  }
+  
