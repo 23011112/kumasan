@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+     
+    <meta charset="UTF-8">
+      <title>採用情報 | くまさん🧸ソリューションズ</title>
+     
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+      <header>
+            <h1>株式会社くまさん🧸ソリューションズ</h1>
+            <nav>
+                  <ul>
+                        <li><a href="../index.html">トップページ</a></li>
+                        <li><a href="../name.html">名前の由来</a></li>
+                        <li><a href="../history.html">歴史</a></li>
+                        <li><a href="../business.html">事業内容</a></li>
+                        <li><a href="../news.html">ニュース</a></li>
+                        <li><a href="../message.html">社長のメッセージ</a></li>
+                        <li><a href="../voice.html">社員の声</a></li>
+                        <li><a href="../recruit.html">採用情報</a></li>
+                        <li><a href="../about.html">会社情報</a></li>
+                        <li><a href="../contact.html">お問い合わせ</a></li>
+                      </ul>
+                </nav>
+          </header>
+
+      <main>
+            <h2>キャリア採用エントリーフォーム</h2>
+            <p>以下のフォームにご記入の上、送信してください。</p>
+
+            <form action="submit_entry_career.php" method="POST" enctype="multipart/form-data">
+                  <label for="name">名前（必須）</label>
+                  <input type="text" id="name" name="name" required>
+
+                  <label for="email">メールアドレス（必須）</label>
+                  <input type="email" id="email" name="email" required>
+
+                  <label for="experience">これまでの職務経験（必須）</label>
+                  <textarea id="experience" name="experience" rows="4" required></textarea>
+
+                  <label for="job">希望職種（必須）</label>
+                  <select id="job" name="job" required>
+                        <option value="software_engineer">ソフトウェアエンジニア</option>
+                        <option value="game_programmer">ゲームプログラマー</option>
+                        <option value="security_engineer">セキュリティエンジニア</option>
+                      </select>
+
+                  <label for="self_pr">自己PR</label>
+                  <textarea id="self_pr" name="self_pr" rows="4"></textarea>
+
+                  <label for="resume">履歴書（PDF形式でアップロード）</label>
+                  <input type="file" id="resume" name="resume" accept=".pdf" required>
+
+                  <button type="submit">送信</button>
+                </form>
+          </main>
+
+      <footer>
+            <p>&copy; 2025 Kumasan Solutions Inc.</p>
+          </footer>
+</body>
+
+</html>
