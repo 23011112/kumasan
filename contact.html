@@ -1,44 +1,55 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
-    <meta charset="UTF-8">
-    <title>お問い合わせ | 株式会社くまさん🧸ソリューションズ</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>お問い合わせ | 株式会社くまさん🧸ソリューションズ</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="css/contact-cute.css">
 </head>
-
 <body>
-    <header>
-        <h1><a href="index.html">株式会社くまさん🧸ソリューションズ</a></h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">トップページ</a></li>
-                <li><a href="name.html">名前の由来</a></li>
-                <li><a href="history.html">歴史</a></li>
-                <li><a href="business.html">事業内容</a></li>
-                <li><a href="news.html">ニュース</a></li>
-                <li><a href="message.html">社長のメッセージ</a></li>
-                <li><a href="voice.html">社員の声</a></li>
-                <li><a href="recruit.html">採用情報</a></li>
-                <li><a href="about.html">会社情報</a></li>
-                <li><a href="contact.html">お問い合わせ</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <form>
-            <label for="name">お名前：</label><br>
-            <input type="text" id="name" name="name"><br>
-            <label for="email">メールアドレス：</label><br>
-            <input type="email" id="email" name="email"><br>
-            <label for="message">メッセージ：</label><br>
-            <textarea id="message" name="message" rows="4"></textarea><br>
-            <button type="submit">送信</button>
-        </form>
-    </main>
-    <footer>
-        <p>&copy; 2025 株式会社くまさん🧸ソリューションズ</p>
-    </footer>
+  <header>
+    <h1><a href="index.html">株式会社くまさん🧸ソリューションズ</a></h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">トップページ</a></li>
+        <li><a href="name.html">名前の由来</a></li>
+        <li><a href="history.html">歴史</a></li>
+        <li><a href="business.html">事業内容</a></li>
+        <li><a href="news.html">ニュース</a></li>
+        <li><a href="message.html">社長のメッセージ</a></li>
+        <li><a href="voice.html">社員の声</a></li>
+        <li><a href="recruit.html">採用情報</a></li>
+        <li><a href="about.html">会社情報</a></li>
+        <li><a href="contact.html">お問い合わせ</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <form>
+      <label for="name">お名前：</label><br>
+      <input type="text" id="name" name="name"><br>
+      <label for="email">メールアドレス：</label><br>
+      <input type="email" id="email" name="email"><br>
+      <label for="message">メッセージ：</label><br>
+      <textarea id="message" name="message" rows="4"></textarea><br>
+      <button type="submit">送信</button>
+    </form>
+  </main>
+  <script>
+    document.querySelector('form').addEventListener('submit', function(event) {
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+  
+      if (!name || !email || !message) {
+        alert('すべてのフィールドを入力してください。');
+        event.preventDefault();
+      }
+    });
+  </script>
+  <footer>
+    <p>&copy; 2025 株式会社くまさん🧸ソリューションズ</p>
+  </footer>
 </body>
-
 </html>
