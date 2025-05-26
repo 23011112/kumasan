@@ -91,7 +91,7 @@ footer p {
     font-size: 1rem;
 }
 
-/* 社長メッセージページ専用スタイル */
+/* 社長メッセージページ用追加 */
 .president-message {
   background-color: #fff;
   padding: 30px;
@@ -110,13 +110,14 @@ footer p {
 
 .president-photo {
   float: right;
-  width: 150px;
+  width: 320px;
   height: auto;
   margin-left: 20px;
   border-radius: 10px;
 }
 
 .signature {
+  display: block;
   margin-top: 30px;
   font-weight: bold;
   font-size: 1.1rem;
