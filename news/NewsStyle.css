@@ -147,8 +147,81 @@ footer p {
     font-size: 1.4rem;
     line-height: 1.8;
     color: #555;
-    border-top: 2px solid #555;   /* 上に横線 */
-    border-bottom: 2px solid #555; /* 下に横線 */
-    padding: 15px 0; /* 上下に余白を追加して見た目を整える */
+    border-top: 2px solid #555;
+    /* 上に横線 */
+    border-bottom: 2px solid #555;
+    /* 下に横線 */
+    padding: 15px 0;
+    /* 上下に余白を追加して見た目を整える */
 }
 
+
+
+/* ニュースページ記述↓ */
+
+
+
+/* ニュースページタイトル */
+.news-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 40px 0 20px;
+    color: #333;
+}
+
+/* ニュースリスト全体 */
+.news-list {
+    max-width: 800px;
+    margin: 0 auto 60px;
+    padding: 0 20px;
+}
+
+/* 各ニュース項目 */
+.news-item {
+    background-color: #fff;
+    border-left: 5px solid #ffbb66;
+    margin-bottom: 15px;
+    padding: 15px 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.3s;
+}
+
+.news-item:hover {
+    background-color: #fff6ee;
+}
+
+/* 日付のスタイル */
+.news-date {
+    display: block;
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 5px;
+}
+
+/* 本文のスタイル */
+.news-text {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* 詳細ページ設定用css */
+
+.news-item a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    padding: 15px 20px;
+}
+
+.news-item a:hover {
+    background-color: #fff6ee;
+    border-radius: 6px;
+}
+
+.year {
+    font-size: 30px;
+    text-decoration: underline;
+}
