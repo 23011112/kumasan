@@ -123,3 +123,46 @@ footer p {
   font-size: 1.1rem;
   text-align: right;
 }
+
+.office-locations table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 1rem;
+  table-layout: fixed;
+}
+
+.office-locations th,
+.office-locations td {
+  border: 1px solid #ccc;
+  padding: 14px 18px;
+  text-align: left;
+  vertical-align: top;
+  word-wrap: break-word;
+}
+
+.office-locations th {
+  background-color: #ffe5d9;
+}
+
+.office-locations tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* 各列に余裕を持たせて表示 */
+.office-locations th:nth-child(1),
+.office-locations td:nth-child(1) {
+  width: 15%;
+}
+.office-locations th:nth-child(2),
+.office-locations td:nth-child(2) {
+  width: 15%;
+}
+.office-locations th:nth-child(3),
+.office-locations td:nth-child(3) {
+  width: 45%;
+}
+.office-locations th:nth-child(4),
+.office-locations td:nth-child(4) {
+  width: 25%;
+}

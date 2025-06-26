@@ -83,3 +83,47 @@ footer {
 footer p {
   font-size: 1rem;
 }
+
+/* 会社情報セクション（企業情報・営業拠点） */
+.office-locations table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 1rem;
+  table-layout: fixed;
+}
+
+.office-locations th,
+.office-locations td {
+  border: 1px solid #ccc;
+  padding: 16px 20px; /* ← 余白を広めに */
+  text-align: left;
+  vertical-align: top;
+  word-wrap: break-word;
+}
+
+.office-locations th {
+  background-color: #ffe5d9;
+}
+
+.office-locations tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* 列の幅を制御（スマホでも崩れにくい） */
+.office-locations th:nth-child(1),
+.office-locations td:nth-child(1) {
+  width: 15%;
+}
+.office-locations th:nth-child(2),
+.office-locations td:nth-child(2) {
+  width: 15%;
+}
+.office-locations th:nth-child(3),
+.office-locations td:nth-child(3) {
+  width: 45%;
+}
+.office-locations th:nth-child(4),
+.office-locations td:nth-child(4) {
+  width: 25%;
+}
