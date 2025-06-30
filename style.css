@@ -91,39 +91,7 @@ footer p {
     font-size: 1rem;
 }
 
-/* 社長メッセージページ用追加 */
-.president-message {
-  background-color: #fff;
-  padding: 30px;
-  margin: 40px 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
-  line-height: 1.8;
-  color: #333;
-}
-
-.president-message h2 {
-  color: #ff8c66;
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
-
-.president-photo {
-  float: right;
-  width: 320px;
-  height: auto;
-  margin-left: 20px;
-  border-radius: 10px;
-}
-
-.signature {
-  display: block;
-  margin-top: 30px;
-  font-weight: bold;
-  font-size: 1.1rem;
-  text-align: right;
-}
-
+/* 会社情報ページ用追加 */
 .office-locations table {
   width: 100%;
   border-collapse: separate;
