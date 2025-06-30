@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #ffddc1;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+h1 a {
+    text-decoration: none;
+    color: inherit;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+
+
+main {
+    background-color: #fffafa;
+    border-radius: 20px;
+    padding: 30px;
+    margin: 30px auto;
+    max-width: 900px;
+    box-shadow: 0 4px 12px rgba(255, 192, 203, 0.2);
+}
+
+main h2, main h3 {
+    color: #d2691e;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+}
+
+main h2::after, main h3::after {
+    content: "🧸";
+    position: absolute;
+    right: -30px;
+    top: 0;
+    font-size: 1.5rem;
+}
+
+main p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #5c4033;
+}
+
+.entry-button {
+    background-color: #ffb6b9;
+    border-radius: 30px;
+    font-weight: bold;
+    font-family: inherit;
+}
+
+.entry-button:hover {
+    background-color: #ff999c;
+}
+
+table th {
+    background-color: #ffe6eb;
+    color: #8b4513;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="file"],
+form select,
+form textarea {
+    border: 2px solid #ffd6d6;
+    background-color: #fff5f8;
+}
+
+form button[type="submit"] {
+    background-color: #ffb6b9;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+form button[type="submit"]:hover {
+    background-color: #ff999c;
+}

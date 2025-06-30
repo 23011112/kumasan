@@ -25,6 +25,7 @@
       </ul>
     </nav>
   </header>
+<<<<<<< HEAD
   <main>
     <form>
       <label for="name">お名前：</label><br>
@@ -48,6 +49,51 @@
       }
     });
   </script>
+=======
+
+  <main>
+    <section class="contact-section">
+      <h2>お問い合わせフォーム</h2>
+      <p>ご意見・ご質問など、お気軽にお問い合わせください。担当者よりご連絡いたします。</p>
+
+      <form id="contact-form">
+          <label for="name">お名前 <span class="required" aria-label="必須">*</span>：</label><br>
+          <input type="text" id="name" name="name" placeholder="例：くまさん 太郎" required><br>
+
+          <label for="email">メールアドレス <span class="required" aria-label="必須">*</span>：</label><br>
+          <input type="email" id="email" name="email" placeholder="例：example@kumasan.co.jp" required><br>
+
+          <label for="message">メッセージ <span class="required" aria-label="必須">*</span>：</label><br>
+          <textarea id="message" name="message" rows="5" placeholder="お問い合わせ内容をご記入ください" required></textarea><br>
+
+          <button type="submit">🧸 送信する</button>
+      </form>
+    </section>
+  </main>
+
+  <script>
+  document.querySelector('form').addEventListener('submit', function(event) {
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const message = document.getElementById('message').value.trim();
+
+    if (!name || !email || !message) {
+      alert('すべての必須項目を入力してください。');
+      event.preventDefault();
+    } else {
+      event.preventDefault();
+
+      alert('送信ありがとうございます！追ってご連絡いたします。');
+
+      setTimeout(() => {
+        location.reload();
+      }, 100);
+    }
+  });
+</script>
+
+
+>>>>>>> 02b4a5493e7f25f0f2926c68912bc64bd2e2b3f6
   <footer>
     <p>&copy; 2025 株式会社くまさん🧸ソリューションズ</p>
   </footer>
