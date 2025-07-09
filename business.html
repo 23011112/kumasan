@@ -2,35 +2,94 @@
 <html lang="ja">
 
 <head>
-    <meta charset="UTF-8">
-    <title>事業内容 | 株式会社くまさん🧸ソリューションズ</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>事業内容 | 株式会社くまさん🧸ソリューションズ</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="business.css">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <h1><a href="index.html">株式会社くまさん🧸ソリューションズ</a></h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">トップページ</a></li>
-                <li><a href="name.html">名前の由来</a></li>
-                <li><a href="history.html">歴史</a></li>
-                <li><a href="business.html">事業内容</a></li>
-                <li><a href="news.html">ニュース</a></li>
-                <li><a href="message.html">社長のメッセージ</a></li>
-                <li><a href="voice.html">社員の声</a></li>
-                <li><a href="recruit.html">採用情報</a></li>
-                <li><a href="about.html">会社情報</a></li>
-                <li><a href="contact.html">お問い合わせ</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <p>事業内容を入力</p>
-    </main>
-    <footer>
-        <p>&copy; 2025 株式会社くまさん🧸ソリューションズ</p>
-    </footer>
+  <header>
+    <h1><a href="index.html">株式会社くまさん🧸ソリューションズ</a></h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">トップページ</a></li>
+        <li><a href="name.html">名前の由来</a></li>
+        <li><a href="history.html">歴史</a></li>
+        <li><a href="business.html">事業内容</a></li>
+        <li><a href="news.html">ニュース</a></li>
+        <li><a href="message.html">社長のメッセージ</a></li>
+        <li><a href="voice.html">社員の声</a></li>
+        <li><a href="recruit.html">採用情報</a></li>
+        <li><a href="about.html">会社情報</a></li>
+        <li><a href="contact.html">お問い合わせ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="business">
+      <div class="business-bg">
+        <h2 class="business-title" data-aos="fade-up">事業内容</h2>
+        <p class="business-intro" data-aos="fade-up" data-aos-delay="100">くまさんソリューションズでは、お客様の課題解決を多角的に支援するため、<br>以下の分野で高品質なITサービスを提供しています。</p>
+
+        <div class="business-cards">
+        <a href="development.html" class="business-card">
+          <img src="img/Development.png" alt="ソフトウェア開発">
+          <div class="overlay">
+            <p class="en">SOFTWARE DEVELOPMENT</p>
+            <p class="jp">ソフトウェア開発</p>
+          </div>
+        </a>
+
+        <a href="server.html" class="business-card">
+          <img src="img/Solution.png" alt="サーバー管理">
+          <div class="overlay">
+            <p class="en">SERVER MANAGEMENT</p>
+            <p class="jp">サーバー管理</p>
+          </div>
+        </a>
+
+        <a href="web.html" class="business-card">
+          <img src="img/Webdesign.png" alt="Web制作">
+          <div class="overlay">
+            <p class="en">WEB PRODUCTION</p>
+            <p class="jp">Web制作</p>
+          </div>
+        </a>
+
+        <a href="support.html" class="business-card">
+          <img src="img/support.png" alt="ヘルプデスク">
+          <div class="overlay">
+            <p class="en">HELP DESK</p>
+            <p class="jp">ヘルプデスク</p>
+          </div>
+        </a>
+
+        <a href="security.html" class="business-card">
+          <img src="img/Security.png" alt="セキュリティ">
+          <div class="overlay">
+            <p class="en">SECURITY</p>
+            <p class="jp">セキュリティ</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 株式会社くまさん🧸ソリューションズ</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
 </body>
 
 </html>
