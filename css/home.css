@@ -62,6 +62,90 @@
   }
   
   .business-bg {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.business-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #3b3b3b;
+}
+
+.business-intro {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+  color: #666;
+}
+
+.business-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.business-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.business-card:hover {
+  transform: translateY(-5px);
+}
+
+.business-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+  text-align: center;
+  padding: 1rem;
+}
+
+.business-card:hover .overlay {
+  opacity: 1;
+}
+
+.overlay .en {
+  font-size: 1.1rem;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.5rem;
+}
+
+.overlay .jp {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+
+    
+    #business {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .business-bg {
     background: linear-gradient(to bottom, #0098db 0%, #e0faff 100%);
     padding: 60px 20px;
     position: relative;

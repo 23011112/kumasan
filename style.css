@@ -91,7 +91,7 @@ footer p {
     font-size: 1rem;
 }
 
-<<<<<<< HEAD
+HEAD
 /* 会社情報ページ用追加 */
 .office-locations table {
   width: 100%;
@@ -100,7 +100,7 @@ footer p {
   font-size: 1rem;
   table-layout: fixed;
 }
-<<<<<<< HEAD
+HEAD
 .president-message h2 {
   color: #ff8c66;
   font-size: 2rem;
@@ -120,7 +120,7 @@ footer p {
   font-size: 1.1rem;
   text-align: right;
 }
-=======
+
 
 .office-locations th,
 .office-locations td {
@@ -156,8 +156,7 @@ footer p {
 .office-locations td:nth-child(4) {
   width: 25%;
 }
->>>>>>> 会社情報ページ作成
-=======
+ 会社情報ページ作成
 
 /* 採用情報ページ用のスタイル追加 */
 
@@ -291,4 +290,3 @@ form button[type="submit"] {
 form button[type="submit"]:hover {
     background-color: #e67350;
 }
->>>>>>> 02b4a5493e7f25f0f2926c68912bc64bd2e2b3f6
