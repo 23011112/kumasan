@@ -1,65 +1,404 @@
-form {
-    max-width: 600px;
-    margin: 40px auto;
-    padding: 25px;
-    background-color: #ffffff;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  main h2 {
-    text-align: center;
-    color: #5b4d3b;
-    margin-bottom: 10px;
-  }
-  
-  main p {
-    text-align: center;
-    color: #666;
-    margin-bottom: 30px;
-  }
-  
-  form label {
-    display: block;
-    margin-bottom: 6px;
-    color: #333;
-    font-weight: bold;
-  }
-  
-  form input[type="text"],
-  form input[type="email"],
-  form textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
+/* css/contact.css */
+
+/* --- カラーパレット定義 (style.css や business.css と共通化しておくと良い) --- */
+:root {
+    --kuma-cream: #FFF8E1; /* 明るいクリーム色 (背景など) */
+    --kuma-light-brown: #A1887F; /* 柔らかいブラウン (テキストなど) */
+    --kuma-medium-brown: #6D4C41; /* 少し濃いブラウン (見出し、強調など) */
+    --kuma-orange: #FFAB40; /* 活気のあるオレンジ (アクセント、CTAボタンなど) */
+    --kuma-light-orange: #FFD54F; /* 明るいイエローオレンジ (ホバーエフェクトなど) */
+    --kuma-green: #AED581; /* 優しいグリーン */
+    --kuma-blue: #64B5F6; /* 爽やかなブルー */
+    --kuma-white: #FFFFFF; /* 白 */
+    --kuma-dark-text: #424242; /* 通常の濃いテキスト色 */
+    --kuma-shadow: rgba(0, 0, 0, 0.1); /* 影 */
+    --kuma-dark-gray: #333333; /* より濃いテキスト色など */
+
+    /* RGB値を追加（必要に応じて） */
+    --kuma-medium-brown-rgb: 109, 76, 65;
+    --kuma-orange-rgb: 255, 171, 64;
+}
+
+/* --- 全体的な設定 (既存のstyle.cssと競合しない範囲で) --- */
+body {
+    font-family: 'Noto Sans JP', 'Open Sans', sans-serif;
+    color: var(--kuma-dark-text);
+    line-height: 1.8;
+    background-color: var(--kuma-cream);
+}
+
+.container {
+    max-width: 1100px; /* 全体的なコンテンツの幅 */
+    margin: 0 auto;
+    padding: 40px 20px;
     box-sizing: border-box;
-    margin-bottom: 20px;
-    font-size: 15px;
-    transition: border-color 0.3s;
-  }
-  
-  form input:focus,
-  form textarea:focus {
-    border-color: #ffb347;
-    outline: none;
-  }
-  
-  form button {
+}
+
+/* --- 共通セクションスタイル --- */
+section {
+    padding: 80px 0;
+    overflow: hidden; /* AOSアニメーション用 */
+}
+
+.pc-only {
     display: block;
+}
+@media (max-width: 768px) {
+    .pc-only {
+        display: none;
+    }
+}
+
+/* --- ヒーローセクション (contact-hero) --- */
+#contact-hero {
+    background-image: linear-gradient(rgba(var(--kuma-medium-brown-rgb), 0.7), rgba(var(--kuma-medium-brown-rgb), 0.9)), url('../img/contact-hero-bg.jpg'); /* 背景画像とオーバーレイ */
+    background-size: cover;
+    background-position: center;
+    color: var(--kuma-white);
+    text-align: center;
+    padding: 120px 20px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+#contact-hero .hero-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5em;
+    font-weight: 900;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+#contact-hero .hero-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: var(--kuma-light-orange);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+/* --- お問い合わせメインコンテンツ (contact-main) --- */
+#contact-main {
+    background-color: var(--kuma-cream);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.section-description {
+    font-size: 1.3em;
+    text-align: center;
+    margin-bottom: 60px;
+    color: var(--kuma-medium-brown);
+    font-weight: 600;
+    line-height: 1.6;
+    padding: 0 20px;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr; /* 情報とフォームの比率 */
+    gap: 60px;
+    align-items: flex-start;
+}
+
+.contact-info,
+.contact-form-wrapper {
+    background-color: var(--kuma-white);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px var(--kuma-shadow);
+    padding: 40px;
+}
+
+.contact-info h3,
+.contact-form-wrapper h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+    color: var(--kuma-medium-brown);
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info h3 i,
+.contact-form-wrapper h3 i {
+    color: var(--kuma-orange);
+    margin-right: 15px;
+    font-size: 1.1em;
+}
+
+/* --- 連絡先情報セクション (contact-info) --- */
+.contact-info p {
+    font-size: 1.05em;
+    line-height: 1.7;
+    color: var(--kuma-dark-text);
+    margin-bottom: 25px;
+}
+
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.contact-icon {
+    font-size: 2.5em;
+    color: var(--kuma-blue); /* アイコンの色 */
+    margin-right: 20px;
+    flex-shrink: 0; /* アイコンが縮まないように */
+    margin-top: 5px; /* テキストと高さを合わせる微調整 */
+}
+
+.info-text h4 {
+    font-size: 1.2em;
+    font-weight: 700;
+    color: var(--kuma-dark-text);
+    margin-bottom: 5px;
+}
+
+.info-text p {
+    margin-bottom: 0; /* ここではpのbottom-marginをリセット */
+    line-height: 1.5;
+}
+
+.info-text p strong {
+    font-size: 1.1em;
+    color: var(--kuma-orange);
+}
+
+.info-text .small-text {
+    font-size: 0.9em;
+    color: var(--kuma-light-brown);
+}
+
+.map-link {
+    color: var(--kuma-blue);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.map-link:hover {
+    color: var(--kuma-orange);
+    text-decoration: underline;
+}
+
+.privacy-note {
+    background-color: var(--kuma-cream);
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: var(--kuma-medium-brown);
+    line-height: 1.6;
+    border-left: 5px solid var(--kuma-orange);
+}
+
+.privacy-note a {
+    color: var(--kuma-orange);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.privacy-note a:hover {
+    text-decoration: underline;
+}
+
+/* --- お問い合わせフォームセクション (contact-form-wrapper) --- */
+.form-instruction {
+    font-size: 1.05em;
+    color: var(--kuma-dark-text);
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    color: var(--kuma-medium-brown);
+    margin-bottom: 8px;
+    font-size: 1em;
+}
+
+.form-group label .required {
+    color: var(--kuma-orange);
+    font-size: 0.9em;
+    margin-left: 5px;
+}
+
+.form-group label .optional {
+    color: var(--kuma-light-brown);
+    font-size: 0.9em;
+    margin-left: 5px;
+}
+
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group select,
+.form-group textarea {
     width: 100%;
-    padding: 12px;
-    background-color: #ffa500;
-    color: white;
-    font-weight: bold;
-    font-size: 16px;
-    border: none;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
     border-radius: 8px;
+    font-size: 1em;
+    color: var(--kuma-dark-text);
+    background-color: #f9f9f9;
+    box-sizing: border-box; /* パディングを含めて幅を計算 */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: var(--kuma-orange);
+    box-shadow: 0 0 0 3px rgba(var(--kuma-orange-rgb), 0.3); /* フォーカス時のシャドウ */
+    outline: none;
+}
+
+.form-group textarea {
+    resize: vertical; /* 垂直方向のみリサイズ可能に */
+    min-height: 120px;
+}
+
+.submit-button {
+    display: block;
+    width: 100%; /* ボタンの幅 */
+    padding: 15px 25px;
+    background-color: var(--kuma-orange);
+    color: var(--kuma-white);
+    border: none;
+    border-radius: 50px;
+    font-size: 1.2em;
+    font-weight: 700;
     cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  form button:hover {
-    background-color: #e69500;
-  }
-    
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    margin-top: 30px;
+}
+
+.submit-button:hover {
+    background-color: var(--kuma-light-orange);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.submit-button:active {
+    transform: translateY(0);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* --- レスポンシブ対応 --- */
+@media (max-width: 992px) {
+    #contact-hero .hero-title {
+        font-size: 2.8em;
+    }
+    #contact-hero .hero-subtitle {
+        font-size: 1.2em;
+    }
+    .contact-grid {
+        grid-template-columns: 1fr; /* タブレット以下では縦並び */
+        gap: 40px;
+    }
+    .contact-info,
+    .contact-form-wrapper {
+        padding: 30px;
+    }
+    .contact-info h3,
+    .contact-form-wrapper h3 {
+        font-size: 1.8em;
+    }
+}
+
+@media (max-width: 768px) {
+    section {
+        padding: 60px 0;
+    }
+    .container {
+        padding: 30px 15px;
+    }
+    #contact-hero {
+        padding: 80px 20px;
+        min-height: 300px;
+    }
+    #contact-hero .hero-title {
+        font-size: 2.2em;
+    }
+    #contact-hero .hero-subtitle {
+        font-size: 1em;
+    }
+    .section-description {
+        font-size: 1em;
+        margin-bottom: 40px;
+    }
+    .contact-info h3,
+    .contact-form-wrapper h3 {
+        font-size: 1.5em;
+        flex-direction: column; /* アイコンとテキストを縦並びに */
+        text-align: center;
+    }
+    .contact-info h3 i,
+    .contact-form-wrapper h3 i {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .contact-info p,
+    .form-instruction {
+        font-size: 0.95em;
+    }
+    .info-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    .contact-icon {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .info-text h4 {
+        font-size: 1.1em;
+    }
+    .privacy-note {
+        padding: 15px;
+        font-size: 0.85em;
+    }
+    .form-group label {
+        font-size: 0.95em;
+    }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 10px 12px;
+        font-size: 0.95em;
+    }
+    .submit-button {
+        font-size: 1.1em;
+        padding: 12px 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    #contact-hero .hero-title {
+        font-size: 1.8em;
+    }
+    #contact-hero .hero-subtitle {
+        font-size: 0.9em;
+    }
+    .contact-info,
+    .contact-form-wrapper {
+        padding: 20px;
+    }
+    .contact-grid {
+        gap: 30px;
+    }
+}
