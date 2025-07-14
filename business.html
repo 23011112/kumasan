@@ -3,10 +3,13 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>事業内容 | 株式会社くまさん🧸ソリューションズ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>事業内容 | 株式会社くまさん🧸ソリューションズ - 未来を拓くIT戦略</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="business.css">
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Montserrat:wght@400;600;700;800;900&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -29,54 +32,170 @@
   </header>
 
   <main>
-    <section id="business">
-      <div class="business-bg">
-        <h2 class="business-title" data-aos="fade-up">事業内容</h2>
-        <p class="business-intro" data-aos="fade-up" data-aos-delay="100">くまさんソリューションズでは、お客様の課題解決を多角的に支援するため、<br>以下の分野で高品質なITサービスを提供しています。</p>
+    <section id="business-hero" class="parallax-section">
+      <div class="parallax-bg" style="background-image: url('img/hero-business.jpg');"></div>
+      <div class="hero-content">
+        <p class="hero-subheading" data-aos="fade-up" data-aos-delay="100">TRANSFORMING YOUR FUTURE WITH INNOVATION</p>
+        <h2 class="hero-title" data-aos="fade-up" data-aos-delay="200">
+          <span class="typed-text"></span>
+        </h2>
+        <p class="hero-title-original" style="display: none;">
+          ビジネスの未来を解き放つ<br>
+          革新的なITソリューションを、今。
+        </p>
+        <p class="hero-description" data-aos="fade-up" data-aos-delay="300">
+          株式会社くまさんソリューションズは、単なる技術提供者ではありません。<br class="pc-only">
+          私たちは、**貴社の成長を加速させる戦略的パートナー**として、<br class="pc-only">
+          未来を見据えた最適なソリューションを提供し、ビジネスの変革を共に実現します。
+        </p>
+        <a href="#services-overview" class="hero-cta-button" data-aos="zoom-in" data-aos-delay="400">サービス一覧を見る <i class="fas fa-arrow-down"></i></a>
+      </div>
+    </section>
+
+    <section id="services-overview">
+      <div class="container">
+        <h3 class="section-heading" data-aos="fade-up">私たちの事業領域：未来を創造する5つの柱</h3>
+        <p class="section-intro" data-aos="fade-up" data-aos-delay="100">
+          お客様のビジネスニーズに深く寄り添い、多角的なアプローチで課題を解決します。<br class="pc-only">
+          経験豊富なプロフェッショナルが、最適なソリューションを設計・提供いたします。
+        </p>
 
         <div class="business-cards">
-        <a href="development.html" class="business-card">
-          <img src="img/Development.png" alt="ソフトウェア開発">
-          <div class="overlay">
-            <p class="en">SOFTWARE DEVELOPMENT</p>
-            <p class="jp">ソフトウェア開発</p>
-          </div>
-        </a>
+          <a href="Business/development.html" class="business-card" data-aos="zoom-in" data-aos-delay="200">
+            <img src="img/Development.png" alt="革新的なソフトウェア開発">
+            <div class="overlay">
+              <p class="en">SOFTWARE DEVELOPMENT</p>
+              <p class="jp">革新的なソフトウェア開発</p>
+            </div>
+            <div class="card-description">
+              <p>ビジネスの核となるシステムを、最新技術と確かな品質で構築します。</p>
+            </div>
+          </a>
 
-        <a href="server.html" class="business-card">
-          <img src="img/Solution.png" alt="サーバー管理">
-          <div class="overlay">
-            <p class="en">SERVER MANAGEMENT</p>
-            <p class="jp">サーバー管理</p>
-          </div>
-        </a>
+          <a href="Business/server.html" class="business-card" data-aos="zoom-in" data-aos-delay="300">
+            <img src="img/Solution.png" alt="堅牢なサーバー・インフラ構築">
+            <div class="overlay">
+              <p class="en">SERVER & INFRA MANAGEMENT</p>
+              <p class="jp">堅牢なサーバー・インフラ構築</p>
+            </div>
+            <div class="card-description">
+              <p>安定稼働とセキュリティを両立した、信頼性の高いインフラを提供します。</p>
+            </div>
+          </a>
 
-        <a href="web.html" class="business-card">
-          <img src="img/Webdesign.png" alt="Web制作">
-          <div class="overlay">
-            <p class="en">WEB PRODUCTION</p>
-            <p class="jp">Web制作</p>
-          </div>
-        </a>
+          <a href="Business/web.html" class="business-card" data-aos="zoom-in" data-aos-delay="400">
+            <img src="img/Webdesign.png" alt="戦略的なWebサイト・サービス制作">
+            <div class="overlay">
+              <p class="en">WEB PRODUCTION & STRATEGY</p>
+              <p class="jp">戦略的なWebサイト・サービス制作</p>
+            </div>
+            <div class="card-description">
+              <p>ユーザーを惹きつけ、成果に繋がるWebデザインと開発を実現します。</p>
+            </div>
+          </a>
 
-        <a href="support.html" class="business-card">
-          <img src="img/support.png" alt="ヘルプデスク">
-          <div class="overlay">
-            <p class="en">HELP DESK</p>
-            <p class="jp">ヘルプデスク</p>
-          </div>
-        </a>
+          <a href="Business/support.html" class="business-card" data-aos="zoom-in" data-aos-delay="500">
+            <img src="img/support.png" alt="迅速かつ丁寧なITサポート">
+            <div class="overlay">
+              <p class="en">DEDICATED IT SUPPORT</p>
+              <p class="jp">迅速かつ丁寧なITサポート</p>
+            </div>
+            <div class="card-description">
+              <p>お客様のIT環境を支える、きめ細やかなヘルプデスクサービスです。</p>
+            </div>
+          </a>
 
-        <a href="security.html" class="business-card">
-          <img src="img/Security.png" alt="セキュリティ">
-          <div class="overlay">
-            <p class="en">SECURITY</p>
-            <p class="jp">セキュリティ</p>
-          </div>
-        </a>
+          <a href="Business/security.html" class="business-card" data-aos="zoom-in" data-aos-delay="600">
+            <img src="img/Security.png" alt="最先端のセキュリティ対策">
+            <div class="overlay">
+              <p class="en">ADVANCED CYBER SECURITY</p>
+              <p class="jp">最先端のセキュリティ対策</p>
+            </div>
+            <div class="card-description">
+              <p>進化する脅威からビジネスを守る、強固なセキュリティソリューションを提供します。</p>
+            </div>
+          </a>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+
+    <section id="achievements" class="parallax-section">
+      <div class="parallax-bg-achievements" style="background-image: url('img/achievements-bg.jpg');"></div>
+      <div class="container">
+        <h3 class="section-heading-white" data-aos="fade-up">確かな実績：お客様の成功が私たちの誇りです</h3>
+        <p class="section-intro-white" data-aos="fade-up" data-aos-delay="100">
+          私たちは、お客様と共に課題を乗り越え、目に見える成果を追求してきました。<br class="pc-only">
+          これまでの導入事例と、お客様から寄せられた感謝の声をご覧ください。
+        </p>
+        <div class="achievement-grid">
+          <div class="achievement-item" data-aos="zoom-in-up" data-aos-delay="200">
+            <p class="achievement-category">製造業向けソリューション</p>
+            <h4 class="achievement-title">生産管理システム刷新で効率化とコスト削減を実現</h4>
+            <p class="achievement-text">複雑な生産プロセスを最新システムで最適化し、**コストを15%削減**。納期遵守率も**99%**へと大幅に向上させました。</p>
+            <p class="achievement-more-info">詳細については、お問い合わせください。</p>
+          </div>
+          <div class="achievement-item" data-aos="zoom-in-up" data-aos-delay="300">
+            <p class="achievement-category">Eコマース戦略</p>
+            <h4 class="achievement-title">ECサイト構築・運用支援で売上20%増に貢献</h4>
+            <p class="achievement-text">ユーザー体験を徹底的に分析し、コンバージョン率を**20%改善**。集客から購入までの導線を最適化し、売上拡大に大きく貢献しました。</p>
+            <p class="achievement-more-info">詳細については、お問い合わせください。</p>
+          </div>
+          <div class="achievement-item" data-aos="zoom-in-up" data-aos-delay="400">
+            <p class="achievement-category">サービス業向けSaaS</p>
+            <h4 class="achievement-title">顧客管理SaaS開発で業務効率と顧客満足度を向上</h4>
+            <p class="achievement-text">煩雑だった顧客情報を一元管理できるSaaSを開発。サポート業務の**効率化を実現**し、結果として顧客満足度の向上に繋がりました。</p>
+            <p class="achievement-more-info">詳細については、お問い合わせください。</p>
+          </div>
+        </div>
+        <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="500">
+          <p class="all-achievements-text">お客様の課題解決に尽力します。</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="why-choose-us">
+      <div class="container">
+        <h3 class="section-heading" data-aos="fade-up">くまさんソリューションズが選ばれる理由：お客様の成功を導く3つの強み</h3>
+        <p class="section-intro" data-aos="fade-up" data-aos-delay="100">
+          私たちは、単なるITベンダーではありません。お客様のビジネス成長を共に目指す「**真のパートナー**」です。<br class="pc-only">
+          私たちのユニークな強みが、貴社の未来を切り拓く確かな礎となります。
+        </p>
+        <div class="reasons-grid">
+          <div class="reason-item" data-aos="fade-zoom-in" data-aos-delay="200">
+            <div class="reason-icon-wrapper">
+              <div class="reason-icon"><i class="fas fa-handshake"></i></div>
+            </div>
+            <h4>お客様に寄り添う「真のパートナーシップ」</h4>
+            <p>表層的な課題だけでなく、お客様の**本質的なニーズ**を深く理解。共に未来を描き、期待をはるかに超えるソリューションを**共創**します。</p>
+          </div>
+          <div class="reason-item" data-aos="fade-zoom-in" data-aos-delay="300">
+            <div class="reason-icon-wrapper">
+              <div class="reason-icon"><i class="fas fa-lightbulb"></i></div>
+            </div>
+            <h4>業界をリードする「最先端の技術力」</h4>
+            <p>常に最新のテクノロジーとトレンドを追求し、市場の**変化を先取り**。革新的な技術を惜しみなく社会に提供し、**ビジネスの可能性を最大化**します。</p>
+          </div>
+          <div class="reason-item" data-aos="fade-zoom-in" data-aos-delay="400">
+            <div class="reason-icon-wrapper">
+              <div class="reason-icon"><i class="fas fa-award"></i></div>
+            </div>
+            <h4>信頼に裏打ちされた「豊富な実績と専門性」</h4>
+            <p>多種多様な業界・規模のお客様から寄せられた**厚い信頼**と、数々の**成功事例**が私たちの何よりの証です。確かな専門性で貴社をサポートします。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact-cta" class="parallax-section">
+      <div class="parallax-bg-cta" style="background-image: url('img/contact-cta-bg.jpg');"></div>
+      <div class="cta-content" data-aos="zoom-in" data-aos-delay="100">
+        <h3>貴社のビジネスを次の「成功ステージ」へ導きます</h3>
+        <p>ITの力で未来を切り拓く、最適なソリューションをご提案いたします。<br class="pc-only">
+          どんな些細なことでも構いません。まずは、お気軽にお問い合わせください。</p>
+        <a href="contact.html" class="cta-button">お問い合わせ・ご相談はこちら <i class="fas fa-paper-plane"></i></a>
+      </div>
+    </section>
+
   </main>
 
   <footer>
@@ -86,8 +205,56 @@
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
   <script>
     AOS.init({
-      duration: 1000,
-      once: true
+      duration: 1200,
+      once: true,
+      offset: 100,
+    });
+
+    // Parallax effect (simple JavaScript for background-position)
+    document.addEventListener('scroll', function() {
+      const scrolled = window.pageYOffset;
+      const parallaxBg = document.querySelector('#business-hero .parallax-bg');
+      if (parallaxBg) {
+        parallaxBg.style.transform = 'translateY(' + -scrolled * 0.2 + 'px)';
+      }
+      const parallaxBgAchievements = document.querySelector('#achievements .parallax-bg-achievements');
+      if (parallaxBgAchievements) {
+        parallaxBgAchievements.style.transform = 'translateY(' + -scrolled * 0.15 + 'px)';
+      }
+      const parallaxBgCta = document.querySelector('#contact-cta .parallax-bg-cta');
+      if (parallaxBgCta) {
+        parallaxBgCta.style.transform = 'translateY(' + -scrolled * 0.1 + 'px)';
+      }
+    });
+
+    // Add class for active scroll position to header if needed (for global styling)
+    window.addEventListener('scroll', function() {
+      const header = document.querySelector('header');
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+    // タイピングアニメーション
+    document.addEventListener('DOMContentLoaded', function() {
+      const typedTextSpan = document.querySelector(".typed-text");
+      const originalText = document.querySelector(".hero-title-original").textContent;
+      typedTextSpan.textContent = ""; // 初期化
+
+      function typeWriter(text, i, fnCallback) {
+        if (i < text.length) {
+          typedTextSpan.textContent = text.substring(0, i+1);
+          setTimeout(function() {
+            typeWriter(text, i + 1, fnCallback)
+          }, 50); // タイピング速度 (ms)
+        } else if (typeof fnCallback == 'function') {
+          setTimeout(fnCallback, 700); // タイピング完了後の遅延
+        }
+      }
+
+      typeWriter(originalText, 0);
     });
   </script>
 </body>
