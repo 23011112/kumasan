@@ -57,7 +57,8 @@
     font-weight: 900;
     line-height: 1.2;
     margin-bottom: 30px;
-    text-shadow: 4px 4px 20px rgba(0, 0, 0, 0.7);
+    color: #fff; /* 文字色を白に設定 */
+    text-shadow: 0 0 25px rgba(0, 0, 0, 0.9), 0 0 10px rgba(0, 0, 0, 0.7); /* 影をさらに強化 */
 }
 
 #hero-detail .hero-description {
@@ -69,7 +70,8 @@
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    color: #fff; /* 文字色を白に設定 */
+    text-shadow: 0 0 25px rgba(0, 0, 0, 0.9), 0 0 10px rgba(0, 0, 0, 0.7); /* 影をさらに強化 */
 }
 
 /* --- Intro Detail Section --- */
@@ -235,7 +237,8 @@
     font-size: 4rem;
     font-weight: 800;
     margin-bottom: 30px;
-    text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.6);
+    color: #fff; /* 見やすいように文字色を明示的に白に */
+    text-shadow: 0 0 15px rgba(0, 0, 0, 0.8), 0 0 8px rgba(0, 0, 0, 0.6); /* 影を強化 */
     line-height: 1.25;
 }
 
@@ -244,7 +247,8 @@
     margin-bottom: 60px;
     opacity: 0.98;
     font-weight: 300;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+     color: #fff; /* 見やすいように文字色を明示的に白に */
+    text-shadow: 0 0 15px rgba(0, 0, 0, 0.8), 0 0 8px rgba(0, 0, 0, 0.6); /* 影を強化 */
 }
 
 .cta-button {
