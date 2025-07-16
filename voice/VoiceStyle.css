@@ -215,3 +215,55 @@ footer p {
     /* background-image: url("Sales.png"); */
     background-image: url("../img/Marketing.png");
 }
+
+
+/* --- カード風デザインに変更 --- */
+.voice-entry {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInUp 0.8s ease both;
+}
+
+/* ホバー時の浮き上がり効果 */
+.voice-entry:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* 画像とテキストのレイアウト調整 */
+.voice-content {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+/* アニメーション定義 */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* モバイル対応：縦並びに */
+@media (max-width: 600px) {
+    .voice-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .voice-content img {
+        width: 100%;
+        max-width: 300px;
+    }
+}
