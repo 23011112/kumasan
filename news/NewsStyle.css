@@ -15,7 +15,6 @@ body {
 /* Header styles */
 header {
     background-color: #ffddc1;
-    /* Light color for header */
     padding: 20px 0;
     text-align: center;
 }
@@ -91,12 +90,6 @@ footer p {
     font-size: 1rem;
 }
 
-
-
-/* 既存のニュースページに追加 */
-
-
-
 /* News page layout */
 .news-layout {
     display: grid;
@@ -148,80 +141,106 @@ footer p {
     line-height: 1.8;
     color: #555;
     border-top: 2px solid #555;
-    /* 上に横線 */
     border-bottom: 2px solid #555;
-    /* 下に横線 */
     padding: 15px 0;
-    /* 上下に余白を追加して見た目を整える */
 }
-
-
-
-/* ニュースページ記述↓ */
-
-
 
 /* ニュースページタイトル */
 .news-title {
-    font-size: 2rem;
+    font-size: 2.4rem;
     font-weight: bold;
     text-align: center;
-    margin: 40px 0 20px;
-    color: #333;
+    margin: 60px auto 30px;
+    color: #222;
+    border-bottom: 3px solid #ff9966;
+    width: fit-content;
+}
+
+/* 年代（年ごとの見出し） */
+.year {
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+    text-align: center;
+    color: #ff6600;
+    background: linear-gradient(to right, #fff5ec, #ffe1cc);
+    padding: 12px 30px;
+    margin: 60px auto 30px;
+    border-radius: 30px;
+    border: 2px solid #ff9966;
+    width: fit-content;
+    box-shadow: 0 4px 10px rgba(255, 153, 102, 0.2);
+    letter-spacing: 1.2px;
+    position: relative;
 }
 
 /* ニュースリスト全体 */
 .news-list {
-    max-width: 800px;
+    max-width: 1100px;
     margin: 0 auto 60px;
-    padding: 0 20px;
+    padding: 0 30px;
 }
 
 /* 各ニュース項目 */
 .news-item {
-    background-color: #fff;
+    background-color: #ffffff;
     border-left: 5px solid #ffbb66;
-    margin-bottom: 15px;
-    padding: 15px 20px;
-    border-radius: 6px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-    transition: background-color 0.3s;
+    margin-bottom: 20px;
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.3s, transform 0.2s;
 }
 
 .news-item:hover {
     background-color: #fff6ee;
+    transform: translateY(-2px);
+}
+
+/* ニュースリンク */
+.news-item a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    padding: 0;
 }
 
 /* 日付のスタイル */
 .news-date {
     display: block;
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: #888;
     margin-bottom: 5px;
 }
 
 /* 本文のスタイル */
 .news-text {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: #333;
-    line-height: 1.5;
+    line-height: 1.6;
+    font-weight: 500;
 }
 
-/* 詳細ページ設定用css */
+/* レスポンシブ対応 */
+@media screen and (max-width: 768px) {
+    .news-title {
+        font-size: 2rem;
+    }
 
-.news-item a {
-    display: block;
-    text-decoration: none;
-    color: inherit;
-    padding: 15px 20px;
-}
+    .year {
+        font-size: 1.5rem;
+        padding: 8px 16px;
+    }
 
-.news-item a:hover {
-    background-color: #fff6ee;
-    border-radius: 6px;
-}
+    .news-list {
+        padding: 0 15px;
+    }
 
-.year {
-    font-size: 30px;
-    text-decoration: underline;
+    .news-item {
+        padding: 20px;
+    }
+
+    .news-text {
+        font-size: 1.05rem;
+    }
 }

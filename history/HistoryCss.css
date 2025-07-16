@@ -26,3 +26,90 @@ main ul li {
     line-height: 1.6;
     color: #555;
 }
+
+/* アニメーション追加 */
+
+/* アニメーション用の初期状態 */
+main section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.8s ease-out;
+}
+
+/* 表示時に適用されるクラス */
+main section.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* 全体を整える */
+
+/* 年表タイムライン */
+.timeline {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 10px;
+}
+
+.timeline li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+    font-size: 1rem;
+    color: #333;
+}
+
+.timeline li:last-child {
+    border-bottom: none;
+}
+
+/* 共通リスト（職種など） */
+main ul {
+    margin-left: 20px;
+    padding-left: 15px;
+    color: #444;
+}
+
+main ul li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+    color: #444;
+}
+
+/* セクション全体の見栄え調整 */
+main section {
+    background-color: #f9f9f9;
+    padding: 20px 30px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* セクション見出し */
+main section h2 {
+    color: #1c3d5a;
+    margin-bottom: 10px;
+    border-left: 5px solid #1c3d5a;
+    padding-left: 10px;
+}
+
+/* リンクスタイル（強調しすぎない） */
+main a {
+    color: #2a71a8;
+    text-decoration: none;
+}
+
+main a:hover {
+    text-decoration: underline;
+}
+
+/* アニメーション */
+main section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.8s ease-out;
+}
+
+main section.show {
+    opacity: 1;
+    transform: translateY(0);
+}
